@@ -43,6 +43,11 @@ class CharacterRulesSBParser : IRulesParser
                     // with a new code and new empty lists
                     break;
                 } 
+                else if (rulesText[i] == '!') 
+                {
+                    // If we see a '!', just note that the next term is negated
+                    nextTermNegated = true;
+                }
                 else if (rulesText[i] == '[') 
                 {
                     // We have found a subject, so we need to find the closing bracket

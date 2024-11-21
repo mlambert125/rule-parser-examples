@@ -17,7 +17,7 @@ IEnumerable<IRulesParser> parsers = [
     new CharacterRulesSBParser(), 
     new CharacterRulesIndexParser(),
     new SpanRulesParser(),
-    new SpracheParser()
+    //new SpracheParser()
 ];
 
 WriteLine("Parsing rules...");
